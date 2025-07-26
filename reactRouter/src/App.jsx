@@ -8,6 +8,7 @@ import RootLayout from './Layout/RootLayout'
 import ContactLayout from './Layout/ContactLayout'
 import ContactInfo from './components/ContactInfo/ContactInfo'
 import ContactForm from './components/ContactInfo/ContactForm'
+import PageNotFound from './Pages/PageNotFound/PageNotFound'
 
 
 function App() {
@@ -24,6 +25,9 @@ const router = createBrowserRouter(
         <Route path='info' element={<ContactInfo />} />
         <Route path='form' element={<ContactForm />} />
       </Route>
+
+      {/* 404 Page Component and path */}
+      <Route path='*' element={<PageNotFound />} />
 
     </Route>
   )
