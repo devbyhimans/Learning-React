@@ -11,6 +11,7 @@ import ContactForm from './components/ContactInfo/ContactForm'
 import PageNotFound from './Pages/PageNotFound/PageNotFound'
 import JobLayout from './Layout/JobLayout'
 import Jobs, { JobsLoader } from './Pages/Jobs/Jobs'
+import JobDetails, { jobDetailsLoader } from './components/JobDetails/JobDetails'
 
 
 function App() {
@@ -32,6 +33,7 @@ const router = createBrowserRouter(
 
       {/* using router loader to first load the data and then render the jobs page */}
         <Route index element={<Jobs />} loader={JobsLoader}/>
+        <Route path=':id' element={<JobDetails/>} loader={jobDetailsLoader}/>
       </Route>
 
       {/* 404 Page Component and path */}

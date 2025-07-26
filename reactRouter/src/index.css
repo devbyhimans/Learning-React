@@ -92,3 +92,12 @@ button{
   background: #d5cccc;
   color: #000;
 }
+
+.jobDetails {
+  padding: 50px 0;
+}
+
+.jobDetails p{
+  max-width: 800px;
+  padding: 10px 0;
+}

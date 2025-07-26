@@ -7,6 +7,8 @@ function JobLayout() {
         <div>
             <h1>Job Openings</h1>
             <p>List of Current Job Openings in our Company</p>
+            <br />
+            <hr />
             <Outlet/>
         </div>
 
