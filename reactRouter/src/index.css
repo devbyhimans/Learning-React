@@ -25,6 +25,7 @@ body{
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+
 .navbar ul{
   padding: 10px 30px;
   border-radius: 30px;
@@ -38,6 +39,11 @@ body{
   border-radius: 30px;
   transition: background-color 0.3s ease;
   cursor: pointer;
+}
+
+/* using the active class of navlink to show currently active page in UI */
+a.active{
+  color: red;
 }
 
 button{
@@ -61,4 +67,13 @@ button{
 .container h1{
   font-size: 70px;
   color: #000000;
+}
+
+.contact-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
 }
