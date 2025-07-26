@@ -77,3 +77,18 @@ button{
   gap: 20px;
   padding: 20px;
 }
+
+.jobs{
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.jobs a{
+  flex: 1;
+  padding: 10px;
+  background: #d5cccc;
+  color: #000;
+}
