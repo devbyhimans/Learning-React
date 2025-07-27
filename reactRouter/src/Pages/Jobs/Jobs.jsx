@@ -8,17 +8,19 @@ function Jobs() {
     return (
         <div className='jobs'>
             {jobsData.map((job)=>{
+//using to attribute and key we get job id and link that job details with that particular job details
+  // Each job item is rendered as a Link
+  // The 'to' attribute sets the route to the job's detail page using the job ID
+  // The 'key' prop helps React track list items efficiently
                 return <Link to={job.id.toString()} key={job.id}>
                     <h4>{job.title}</h4>
                     <p>{job.company}</p>
                     <p>{job.location}</p> 
-                    
-                    
                 </Link>
             })}
         </div>
     )
-}
+} 
 
 export default Jobs
 
