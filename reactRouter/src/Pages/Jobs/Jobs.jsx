@@ -28,5 +28,10 @@ export default Jobs
 
  export const JobsLoader = async()=>{
     const res = await fetch("http://localhost:5000/jobs");
+     
+    //if api call fails to get data error elment will show
+    if(!res.ok){
+        throw new Error("Could not found job Details");
+    }
     return res.json();
 }

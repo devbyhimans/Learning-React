@@ -25,5 +25,9 @@ export const jobDetailsLoader = async ({params})=>{
     
     const res = await fetch("http://localhost:5000/jobs/"+id) 
     
+    // checking we getting the response from api if the response is not ok then throeing the error
+    if(!res.ok){
+        throw new Error("Could not found job Details");
+    }
     return res.json();
 }
